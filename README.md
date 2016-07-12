@@ -17,11 +17,11 @@
       var canvas = $('canvas')[0];
   
       var view = new view(canvas);  //创建场景,传入canvas对象
-      view.clearColor(0,0,0,1);
-      view.setPerspective(30, canvas.width/canvas.height, 0.1, 100);
+      view.clearColor(0,0,0,1); //设置背景颜色
+      view.setPerspective(30, canvas.width/canvas.height, 0.1, 100);   //投影映射 
       view.setLookAt(0,0,-5,
                   0,0,100,
-                  0,1,0);
+                  0,1,0);   //设置视点位置
       var triangle1 = new gameobject([      0.0,  0.5,   0.0,   // gameobject(vertext,color);
                               -0.5, -0.5,   0.0,
                                0.5, -0.5,   0.0,
