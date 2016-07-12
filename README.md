@@ -4,7 +4,11 @@
 对WebGL API基于自身理解进行了封装，使用了requirejs
 
 ##目前阶段：
-实现了场景，基本的gameobject
+* 实现了场景，基本的gameobject
+* 视点变换，正射与投影变换
+* 世界变换（平移，旋转，缩放）物体变换
+* 深度测试
+
 
 ##demo：
 可参考lib/webgl.js文件
